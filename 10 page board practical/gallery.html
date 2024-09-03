@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Gachibowli Warriors</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container */
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #004080;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo img {
+      height: 50px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    nav .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #ffcc00;
+      color: #004080;
+    }
+
+    /* Gallery section styles */
+    .gallery-section {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 36px;
+      color: #004080;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .caption {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 18px;
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="https://example.com/path/to/logo.png" alt="Gachibowli Warriors Logo">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Team Moments</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="cl.jpg" alt="Memorable Moment 1">
+          <div class="caption">Victory Celebration in 2018</div>
+        </div>
+        <div class="gallery-item">
+          <img src="m2.jpg" alt="Memorable Moment 2">
+          <div class="caption">Intense Battle in 2019 Finals</div>
+        </div>
+        <div class="gallery-item">
+          <img src="m3.webp" alt="Bad Moment 1">
+          <div class="caption">Heartbreaking Loss in 2020</div>
+        </div>
+        <div class="gallery-item">
+          <img src="m4.jpg" alt="Memorable Moment 3">
+          <div class="caption">Comeback Victory in 2021</div>
+        </div>
+        <div class="gallery-item">
+          <img src="m5.webp" alt="Bad Moment 2">
+          <div class="caption">Injury Crisis in 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Gachibowli Warriors. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

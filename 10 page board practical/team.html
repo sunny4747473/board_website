@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team - Gachibowli Warriors</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General styles */
+    /* General styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container */
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #004080;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo img {
+      height: 50px;
+      /* Adjust based on your logo size */
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    nav .logo img:hover {
+      transform: scale(1.1);
+      /* Slightly enlarge the logo on hover */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #ffcc00;
+      color: #004080;
+    }
+
+    /* Team section styles */
+    .team-section {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 36px;
+      color: #004080;
+      margin-bottom: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .team-member {
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 15px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member img {
+      width: 150px;
+      /* Set a fixed width for uniformity */
+      height: 150px;
+      /* Set a fixed height for uniformity */
+      border-radius: 50%;
+      /* Make the image round */
+      object-fit: cover;
+      /* Ensure image covers the area without distortion */
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      font-size: 24px;
+      color: #004080;
+      margin: 10px 0;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .team-member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="https://example.com/path/to/logo.png" alt="Gachibowli Warriors Logo">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2>Meet the Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="john.jpg" alt="Team Member 1">
+          <h3>John Doe</h3>
+          <p>Captain - Forward. Known for his leadership on and off the field, John brings a wealth of experience and
+            skill to the team.</p>
+        </div>
+        <div class="team-member">
+          <img src="p2.jpg" alt="Team Member 2">
+          <h3>Jane Smith</h3>
+          <p>Vice-Captain - Midfielder. A dynamic playmaker with excellent vision and passing accuracy, Jane is crucial
+            to our game strategy.</p>
+        </div>
+        <div class="team-member">
+          <img src="p3.jpg" alt="Team Member 3">
+          <h3>Michael Brown</h3>
+          <p>Defender. Michael is known for his strong tackling and solid defensive skills, making him a key player in
+            protecting our goal.</p>
+        </div>
+        <div class="team-member">
+          <img src="p4.jpg" alt="Team Member 4">
+          <h3>Emily Davis</h3>
+          <p>Goalkeeper. Emily's agility and reflexes are unmatched, making her a formidable presence in front of the
+            goal.</p>
+        </div>
+        <div class="team-member">
+          <img src="p5.jpg" alt="Team Member 5">
+          <h3>James Wilson</h3>
+          <p>Striker. With a keen eye for goal and excellent finishing skills, James is one of our top scorers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Gachibowli Warriors. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

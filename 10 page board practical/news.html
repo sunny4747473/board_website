@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - Gachibowli Warriors</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image: url('https://example.com/path/to/background.jpg');
+      /* Replace with your background image URL */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container */
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #004080;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo img {
+      height: 50px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    nav .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #ffcc00;
+      color: #004080;
+    }
+
+    /* News section styles */
+    .news-section {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .news-section h2 {
+      font-size: 36px;
+      color: #004080;
+      margin-bottom: 30px;
+    }
+
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .news-item {
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 800px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .news-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .news-item h3 {
+      font-size: 24px;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .news-item p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .news-item a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .news-item a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="https://example.com/path/to/logo.png" alt="Gachibowli Warriors Logo">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <div class="container">
+      <h2>Recent News</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <h3>Headline 1</h3>
+          <p>Gachibowli Warriors secure a thrilling victory against rivals.</p>
+          <p class="more-text">The Gachibowli Warriors showcased their resilience and skill in a stunning match against
+            their long-standing rivals, securing a decisive victory that has thrilled fans and set the stage for an
+            exciting season ahead.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="news-item">
+          <h3>Headline 2</h3>
+          <p>Star player injured in a recent match.</p>
+          <p class="more-text">During the last match, the team's star player suffered an injury that could impact the
+            lineup for upcoming games. Coaches are hopeful for a quick recovery.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="news-item">
+          <h3>Headline 3</h3>
+          <p>Coach announces new strategies for upcoming games.</p>
+          <p class="more-text">In a recent press conference, the head coach outlined new strategies that will be
+            employed in upcoming games, aiming to maximize the team's strengths and improve their chances for victory.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="news-item">
+          <h3>Headline 4</h3>
+          <p>Upcoming charity event to support local communities.</p>
+          <p class="more-text">The team is organizing a charity event next month to support local communities, with all
+            proceeds going to various charitable causes in the region.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="news-item">
+          <h3>Headline 5</h3>
+          <p>Fans' reactions to the latest match and player performances.</p>
+          <p class="more-text">The recent match drew a lot of attention from fans, who were eager to share their
+            thoughts on player performances and the overall team strategy.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Gachibowli Warriors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for "Read more" functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('click', function (event) {
+          event.preventDefault();
+          const moreText = this.previousElementSibling;
+          if (moreText.style.display === 'block') {
+            moreText.style.display = 'none';
+            this.textContent = 'Read more';
+          } else {
+            moreText.style.display = 'block';
+            this.textContent = 'Read less';
+          }
+        });
+      });
+
+      // Initialize display state
+      document.querySelectorAll('.more-text').forEach(text => {
+        text.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>
